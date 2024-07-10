@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #283442;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  width: 500px;
+  padding: 50px;
+  background-color: #0b121e;
+  border-radius: 30px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: first baseline;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  height: 75px;
+}
+
+.invalid {
+  color: #781818;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  background-color: #222a3c;
+  padding: 12px;
+  margin-left: 10px;
+  border-radius: 50%;
+  color: #8d97a5;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  color: #dbe5f1;
+}
+
+input[type="text"] {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 20px;
+  background-color: #222a3c;
+  color: #8d97a5;
+  border: none;
+  transition: 100ms ease-in;
+  width: 300px;
+}
+
+.weather-icon {
+  height: 150px;
+}
+
+.weather-description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #8d97a5;
+}
+
+.weather-main-info {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  height: 350px;
+  text-align: center;
+  color: #dbe5f1;
+}
+
+.city-name {
+  font-size: 40px;
+}
+
+.temperature {
+  font-size: 50px;
+}
+
+.weather-other-info {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: center;
+  gap: 10px;
+}
+
+.weather-other-info > div {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #222a3c;
+  color: #8d97a5;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  height: 120px;
+}
+
+.wind-speed,
+.humidity {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 15px;
+  color: #dbe5f1;
+  font-size: 25px;
+  text-transform: lowercase;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  transform: scale(1.03);
+}
+
+footer {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 14px;
+}
+
+.dev {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    width: min(375px, 90%);
+    padding: 35px;
+  }
+
+  input[type="text"] {
+    width: 220px;
+    padding: 10px 15px;
+  }
+
+  .city-name {
+    font-size: 32px;
+  }
+
+  .weather-description {
+    font-size: 12px;
+  }
+
+  .weather-icon {
+    height: 100px;
+  }
+
+  .temperature {
+    font-size: 40px;
+  }
+
+  .weather-main-info {
+    height: 250px;
+  }
+
+  .weather-other-info > div {
+    font-size: 10px;
+    width: 150px;
+    height: 100px;
+  }
+
+  .humidity,
+  .wind-speed {
+    font-size: 16px;
+  }
+}

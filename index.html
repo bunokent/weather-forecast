@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://openweathermap.org/img/wn/02d@2x.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <main>
+      <div class="search-bar">
+        <div class="container">
+          <input type="text" placeholder="Search city" name="search" />
+          <p class="invalid hide">City not found</p>
+        </div>
+        <button type="submit">
+          <i class="fa-lg fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div class="weather-main-info">
+        <h1 class="city-name">Bohol</h1>
+        <p class="weather-description">few clouds</p>
+        <img
+          src="https://openweathermap.org/img/wn/10d@2x.png"
+          alt=""
+          class="weather-icon"
+        />
+        <p class="temperature">11°</p>
+      </div>
+      <div class="weather-other-info">
+        <div>
+          <p>humidity</p>
+          <p class="humidity">0%</p>
+        </div>
+        <div>
+          <p>wind</p>
+          <p class="wind-speed">0km/hr</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Developed by: <span class="dev">Kent Buno</span></p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/e42be06ce9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
